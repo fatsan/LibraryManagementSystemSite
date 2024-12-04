@@ -9,7 +9,7 @@ public interface ICategoryService
 {
     ReturnModel<CategoryResponseDto> Add(CreateCategoryRequest dto);
     ReturnModel<List<CategoryResponseDto>> GetAll();
-    ReturnModel<List<CategoryResponseDto>> GetById(int id);
+    ReturnModel<CategoryResponseDto> GetById(Guid id);
     ReturnModel<CategoryResponseDto> Update(UpdateCategoryRequest dto);
-    ReturnModel<CategoryResponseDto> Delete(int id);
+    ReturnModel<CategoryResponseDto> Delete(Guid id);
 }

@@ -10,7 +10,7 @@ public interface IAuthorService
 {
     ReturnModel<AuthorResponseDto> Add(CreateAuthorRequest dto);
     ReturnModel<List<AuthorResponseDto>> GetAll();
-    ReturnModel<List<AuthorResponseDto>> GetById(int id);
+    ReturnModel<AuthorResponseDto> GetById(Guid id);
     ReturnModel<AuthorResponseDto> Update(UpdateAuthorRequest dto);
-    ReturnModel<AuthorResponseDto> Delete(int id);
+    ReturnModel<AuthorResponseDto> Delete(Guid id);
 }

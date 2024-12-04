@@ -10,7 +10,7 @@ public interface IBookService
 {
     ReturnModel<BookResponseDto> Add(CreateBookRequest dto);
     ReturnModel<List<BookResponseDto>> GetAll();
-    ReturnModel<List<BookResponseDto>> GetById(int id);
+    ReturnModel<BookResponseDto> GetById(Guid id);
     ReturnModel<BookResponseDto> Update(UpdateBookRequest dto);
-    ReturnModel<BookResponseDto> Delete(int id);
+    ReturnModel<BookResponseDto> Delete(Guid id);
 }
